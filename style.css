@@ -132,7 +132,7 @@ section {
     align-items: center;
     justify-content: center;
     height: fit-content;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .contact-container {
@@ -209,4 +209,16 @@ footer p {
         justify-content: center;
         align-items: center;
     }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2.5fr));
+    grid-gap: 5px;
+    justify-items: center;
+    margin-bottom: 5px;
+}
+
+.gallery img {
+    width: 100%;
 }
