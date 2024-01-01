@@ -18,6 +18,7 @@ header {
     position: relative;
 }
 
+/* Basic styling for the buttons */
 nav {
     display: flex;
     justify-content: center;
@@ -43,3 +44,23 @@ a {
     font-weight: bold;
 }
 
+#quote {
+    width: 70%;
+    height: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #f9f9f9dc;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+}
+
+#introduction-text {
+    width: 70%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #f9f9f9;
+    padding: 20px 0;
+}
