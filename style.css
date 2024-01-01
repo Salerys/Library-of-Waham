@@ -104,3 +104,23 @@ section {
         font-size: 5.5vw;
     }
 }
+
+/*--- ETHERAS ---*/
+#etheras {
+    background-image: url('./assets/home/etheras_illust.jpg');
+}
+
+/*--- MUTE PRIESTESS ---*/
+#mute-priestess {
+    background-image: url('./assets/home/mute_priestess.jpg');
+}
+
+.mute-priestess-content {
+    margin-left: auto;
+}
+
+/*--- LOST IN TIME ---*/
+#lost-in-time {
+    background-image: url('./assets/home/man_lost_in_time.jpg');
+}
+
