@@ -222,3 +222,13 @@ footer p {
 .gallery img {
     width: 100%;
 }
+
+#thankyou-body {
+    background-color: #f3f3f3;
+}
+
+#thankyou-message {
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+}
