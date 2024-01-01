@@ -161,13 +161,11 @@ input{
 
 .submit-button input {
     font-size:larger;
-    margin-bottom: 0 !important;
 }
 
 .submit-button {
     display: flex;
     justify-content: center;
-    height: 30px !important;
 }
 
 footer {
