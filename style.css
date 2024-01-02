@@ -8,8 +8,6 @@ body {
     height: 100vh;
     background-color: #777777;
     font-family:Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
 }
 
 header {
@@ -65,9 +63,21 @@ a {
 #quote {
     color: #333;
     padding: 5px;
-    font-size: 16px;
+    font-size: 22px;
+    font-style: bold;
     text-align: center;
     background-color: #e69138;
+}
+
+@media screen and (max-width: 360px) {
+    #quote {
+        color: #333;
+        padding: 5px;
+        font-size: 18px;
+        font-style: bold;
+        text-align: center;
+        background-color: #e69138;
+    }
 }
 
 /*--- SECTION COMMON SETTINGS ---*/
@@ -100,13 +110,17 @@ section {
     position: absolute;
     top: 30px;
     left: 20px;
-    padding: 0 25px;
-    font-size: 16px;
+    padding: 10px 25px;
+    font-size: 18px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 420px) {
     .papyrus-text {
-        font-size: 5.5vw;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        padding: 10px 25px;
+        font-size: 15px;
     }
 }
 
