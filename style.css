@@ -7,7 +7,9 @@
 body {
     height: 100vh;
     background-color: #777777;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -41,7 +43,7 @@ li {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1440px) {
     ul {
         display: block;
     }
@@ -98,8 +100,8 @@ section {
     position: absolute;
     top: 30px;
     left: 20px;
-    padding: 20px 25px;
-    font-size: 18px;
+    padding: 0 25px;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 360px) {
@@ -168,22 +170,6 @@ input{
     justify-content: center;
 }
 
-footer {
-    padding: 0px 100px;
-    background-color: #e69138;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-footer p {
-    text-align: center;
-    font-size:larger;
-    font-weight:bolder;
-
-}
-
 .social-media {
     margin: 20px 0;
 }
@@ -200,25 +186,16 @@ footer p {
     height: 32px;
 }
 
-@media screen and (max-width: 640px) {
-    footer {
-        padding: 20px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2.5fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2,5fr));
     grid-gap: 5px;
     justify-items: center;
     margin-bottom: 5px;
 }
 
 .gallery img {
-    width: 100%;
+    width: 100%
 }
 
 #thankyou-body {
@@ -233,4 +210,29 @@ footer p {
     margin-top: 100px;
     text-align: center;
     width: 100%;
+}
+
+footer {
+    padding: 0px 100px;
+    background-color: #e69138;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+footer p {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+
+@media screen and (max-width: 640px) {
+    footer {
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
