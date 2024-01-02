@@ -64,7 +64,6 @@ a {
     color: #333;
     padding: 5px;
     font-size: 22px;
-    font-style: bold;
     text-align: center;
     background-color: #e69138;
 }
@@ -74,7 +73,6 @@ a {
         color: #333;
         padding: 5px;
         font-size: 18px;
-        font-style: bold;
         text-align: center;
         background-color: #e69138;
     }
@@ -202,7 +200,7 @@ input{
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2,5fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2.5fr));
     grid-gap: 5px;
     justify-items: center;
     margin-bottom: 5px;
