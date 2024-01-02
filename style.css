@@ -225,6 +225,10 @@ footer p {
     background-color: #f3f3f3;
 }
 
+#thankyou-image {
+    width:100%;
+}
+
 #thankyou-message {
     margin-top: 100px;
     text-align: center;
