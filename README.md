@@ -199,7 +199,15 @@ Friends and family members were asked to review the site to point out any bugs a
 
 ### Known Bugs
 
-Implemented "_blank" code for Gallery images downloads the image instead of opening then on a new tab on certain browsers.
+- Implemented "_blank" code for Gallery images downloads the image instead of opening then on a new tab on certain browsers.
+
+- During the CSS validation process, several parsing errors were reported. These errors are associated with the minified version of Bootstrap's CSS (version 5.3.2), which is an external library used in the project. Here's an overview of the identified issues:
+  ![CSS validator bug image](docs/readme_img/css_validator_bug.jpg)
+  
+
+  - Bootstrap Parsing Errors: The CSS validator reported parsing errors in the Bootstrap library. As these errors are within an external, well-maintained library, they are beyond the scope of this project's direct codebase. Such parsing errors are known to occur in minified files where optimizations for size may result in unconventional syntax that doesn't affect functionality but may not pass strict validation.
+  - It's important to note that these parsing errors do not impact the performance or visual rendering of the website. The Bootstrap library is widely used and tested, and the errors reported are recognized as false positives that do not indicate actual issues in the library's operation or the website's functionality.
+While these errors are acknowledged, no action is required as they are part of the minified Bootstrap library and not a result of the project's custom CSS code.
 
 ## Technologies Used
 
