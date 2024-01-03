@@ -265,3 +265,5 @@ All images and videos were sourced from the below websites with huge thanks to t
 My mentor Antonio for his support and advice.
 
 The Code Institute slack community for their quick responses and very helpful feedback, especially Kay_ci.
+
+My real life friends Matthew and Thomas who answered all my silly questions a beginner coder can have.
