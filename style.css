@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-image: url("./assets/home/the_forbidden_library_by_glowsydoodles_dbdv1jk-pre.jpg");
+    background-image: url("assets/home/forbidden_library.jpg");
     background-size: cover;
     height:240px;
     padding: 20px 40px;
@@ -124,12 +124,12 @@ section {
 
 /*--- ETHERAS ---*/
 #etheras {
-    background-image: url('./assets/home/etheras_illust.jpg');
+    background-image: url('assets/home/etheras_illust.jpg');
 }
 
 /*--- MUTE PRIESTESS ---*/
 #mute-priestess {
-    background-image: url('./assets/home/mute_priestess.jpg');
+    background-image: url('assets/home/mute_priestess.jpg');
 }
 
 .mute-priestess-content {
@@ -138,7 +138,7 @@ section {
 
 /*--- LOST IN TIME ---*/
 #lost-in-time {
-    background-image: url('./assets/home/man_lost_in_time.jpg');
+    background-image: url('assets/home/man_lost_in_time.jpg');
 }
 
 #contact {
