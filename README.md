@@ -148,7 +148,7 @@ Wireframes were produced using Balsamiq.
     - [W3C Validator Results](https://validator.w3.org/nu/?useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Fsalerys.github.io%2FLibrary-of-Waham%2Findex.html)
 
 - #### CSS
-  - 3 errors found with the official W3C CSS Validator when using link input to check
+  - errors were found with the official W3C CSS Validator when using link input to check
   - No errors found with the official W3C CSS Validator when using direct input to check
   - I was informed upon asking, that I don't need to worry about the link input error, as I'm using the Code Institute template, and my ppt1 is running without problem.
     - [W3C CSS Validator Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsalerys.github.io%2FLibrary-of-Waham%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
