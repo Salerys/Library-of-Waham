@@ -220,6 +220,7 @@ Implemented "_blank" code for Gallery images downloads the image instead of open
 - [GitHub](https://github.com/) - Used for version control and hosting.
 - [TinyPNG](https://tinypng.com/) - Used to compress images to reduce file size without a reduction in quality.
 - [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
+- [icons8](https://icons8.com/) - Used for favicon.
 
 ## Deployment
 
