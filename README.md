@@ -125,7 +125,7 @@ Wireframes were produced using Balsamiq.
 
 
 - ### Footer
-  - The footer section includes links to Library of Waham's Facebook, Instagram, Twitter and Youtube pages that currently don't exist yet at the time of creation for this project
+  - The footer section includes links to Library of Waham's Facebook, Instagram, and Twitter pages that currently don't exist yet at the time of creation for this project
   - The links will open to a new tab to allow easy navigation for the user
   - The footer is crucial to the user, it allows them to find and follow Library of Waham on various social media platforms
 
@@ -137,6 +137,7 @@ Wireframes were produced using Balsamiq.
 - A new novel section where the user is able to find and read the uploaded novel chapters
 - A clickable button that allows the user to jump from a present novel teaser to the corresponding novel
 - Implementation of a comment system for the fanbase to communicate
+- Actual social media profiles
 
 ## Testing
 
@@ -147,8 +148,11 @@ Wireframes were produced using Balsamiq.
     - [W3C Validator Results](https://validator.w3.org/nu/?useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Fsalerys.github.io%2FLibrary-of-Waham%2Findex.html)
 
 - #### CSS
-  - No errors were found when passing through the official W3C CSS Validator
-    - [W3C CSS Validator Results]()
+  - 3 errors found with the official W3C CSS Validator when using link input to check
+  - No errors found with the official W3C CSS Validator when using direct input to check
+  - I was informed upon asking, that I don't need to worry about the link input error, as I'm using the Code Institute template, and my ppt1 is running without problem.
+    - [W3C CSS Validator Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsalerys.github.io%2FLibrary-of-Waham%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    - ![CSS validator success image](docs/readme_img/css_validator_success.jpg)
 
 - #### Accessibility
   - The site achieved a Lighthouse accessibility score of 90% which confirms that while a few improvements could be done with the buttons, the colours and fonts chosen are easy to read and accessible
@@ -166,36 +170,36 @@ Wireframes were produced using Balsamiq.
 
 ### Browser Testing
 
-- The Website was tested on Google Chrome, Firefox, Microsoft Edge, Safari browsers with no issues noted.
+- The Website was tested on Google Chrome, Firefox, Microsoft Edge, Opera GX browsers with no major issues noted.
 
 ### Device Testing
 
-- The website was viewed on a variety of devices to ensure responsiveness on various screen sizes. The website performed as intended. The responsive design was also checked using Chrome developer tools across multiple devices with structural integrity holding for the various sizes.
+- The website was viewed on multiple devices to ensure responsiveness on various screen sizes. Everything performed as intended. The responsiveness was also checked using Chrome developer tools across multiple devices for the various sizes.
 - I also used the following websites to test responsiveness:
-  - [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Faliokeeffe.github.io%2Fmindyoga%2F)
-  - [Am I Responsive](http://ami.responsivedesign.is/?url=https%3A%2F%2Faliokeeffe.github.io%2Fmindyoga%2F)
+  - [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fsalerys.github.io%2FLibrary-of-Waham%2Findex.html)
+  - [Am I Responsive](https://ui.dev/amiresponsive?url=https://salerys.github.io/Library-of-Waham/index.html)
+  - [AmIResponsive](https://amiresponsive.co.uk)
 
 ### Friends and Family User Testing
 
-Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+Friends and family members were asked to review the site to point out any bugs and/or user experience issues.
 
 ### Fixed Bugs
 
-#### Anchor link scroll with a fixed position header
+#### Home page section text out of intended area on smaller devices
 
-- The header element contains anchor links to allow the user to navigate to different sections within the website. By default, these will scroll so that the target element is flush with the top of the browser window.
-- When I updated the header to use a fixed top position, the beginning of each section ended up being covered by the header, which wasn’t ideal.
-- To resolve this I created div elements at the top of each section and applied a relative position with a -75px top position (the same height as the header). This way, when the user clicks on a nav link, the browser window scrolls to the top of the corresponding section.
+- The three sections in index html ad their text got pushed out of the intended area (the papyrus image) on smaller devices, making the user experience unacceptable
+- To solve this I created a media tag for the sections
 
-#### Using padding on elements with 100% width / CSS Box Model
+#### Grid template: column for Gallery didn't work as intended
 
-- When I first implemented my section elements I set them to use a width of 100%. When I later added content to some of these, I applied padding to create more space for the text and images.
-- I did not expect the padding to be added to the width of the content box of the Section and didn’t understand why the Sections with added padding rendered at a different size to those that did not.
-- I read up a bit more about the CSS Box Model and then implemented a new Div element with no defined width inside of the relevant Section elements, on which I was able to apply the required padding, while ensuring that the width of 100% was applied to all Section elements consistently.
+- When I first implemented Grid for the Gallery page I tried setting a template:column autofit minmax css code as previously showcased by our coordinator and course group members, which caused the page to look empty and unprofessional on bigger screen size.
+- No matter how I tried, if I made it look as intended on bigger screen size, on phone devices it became scuffed, the images being wider than the body/header.
+- Having consulted people we still haven't found the solution, so I have settled with deleting the minmaxing code line, changing the style to the current one, where the user has to scroll through the pictures.
 
 ### Known Bugs
 
-HTML Smooth Scroll does not work on Safari browser.
+Implemented "_blank" code for Gallery images downloads the image instead of opening then on a new tab on certain browsers.
 
 ## Technologies Used
 
@@ -208,11 +212,12 @@ HTML Smooth Scroll does not work on Safari browser.
 
 - [Am I Responsive](http://ami.responsivedesign.is/) - Used to verify responsiveness of website on different devices.
 - [Responsinator](http://www.responsinator.com/) - Used to verify responsiveness of website on different devices.
+- [AmIResponsive](https://amiresponsive.co.uk) - Used to verify responsiveness of website on different devices.
 - [Balsamiq](https://balsamiq.com/) - Used to generate Wireframe images.
 - [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and tweaking, including testing responsiveness and performance.
+- [Opera GX Dev Tools](https://dev.opera.com/extensions/testing/) - Used for overall development and tweaking, including testing responsiveness and performance.
 - [Font Awesome](https://fontawesome.com/) - Used for Social Media icons in footer.
 - [GitHub](https://github.com/) - Used for version control and hosting.
-- [Google Fonts](https://fonts.google.com/) - Used to import and alter fonts on the page.
 - [TinyPNG](https://tinypng.com/) - Used to compress images to reduce file size without a reduction in quality.
 - [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
 
@@ -227,45 +232,36 @@ The project was deployed using GitHub pages. The steps to deploy using GitHub pa
 5. Once selected, click the 'Save'.
 6. Deployment should be confirmed by a message on a green background saying "Your site is published at" followed by the web address.
 
-The live link can be found here - [Mind Yoga](https://aliokeeffe.github.io/mindyoga/)
+The live link can be found here - [Library of Waham](https://github.com/Salerys/Library-of-Waham)
 
 ## Credits
 
 ### Content
 
-All educational yoga content was sourced from the below websites:
+- All Gallery concept art were created by my sister.
+- All novels shown in teasers as well the Author name is me, and are created by me.
 
-- [Yoga Journal](https://www.yogajournal.com)
-- [Amayaan](https://www.amayaan.com/)
-- [Ekhart Yoga](https://www.ekhartyoga.com)
-- [Mind Body Green](https://www.mindbodygreen.com)
-- [Class Pass](https://classpass.com)
-- [Art of Living](https://www.artofliving.org)
 
 ### Media
 
-All images and videos were sourced from the below websites with thanks to the below amazing photographers/videographers
+All images and videos were sourced from the below websites with huge thanks to their creator.
 
-- [Pexels](https://www.pexels.com/)
-  - Enrrique Hoyos - Waves Video
-  - Anete Lusina - Tree Pose Image
-  - Daria Klimova - Standing Forward Fold Pose Image
-- [Unsplash](https://unsplash.com)
-  - Mikita Karasiou - Hero Image
-  - Tabitha Turner - Upward Facing Dog Pose Image
-  - Balu Gáspár - Childs Pose Image
-  - Tima Miroshnichenko - Yoga Silhouette
-- [PXhere](https://pxhere.com/)
-  - Mohamad Hassan - Yoga Silhouette
-  - Dave Contreras - Yoga Silhouette
+- [DeviantArt](https://www.deviantart.com)
+  - ftourini - old paper stock 01 and 02
+  - Glowsydoodles - the forbidden library
+- [Pixiv](https://pixiv.net)
+  - Feesh - 【PFNW】守護者の地
+  - のば - 【PFFK】ガラリスの大列柱教会跡と聖母像【巡礼者の依頼】
+  - Alayna Danner - Wind Vale
+
 
 ### Resources Used
 
-- Inspiration for dropdown nav bar - [W3Schools](https://www.w3schools.com/)
-- [Stack Overflow](https://stackoverflow.com/)
+- Inspiration for grid css code - Dajana (student in the _5P group like me) and her amazing project [Isbaner Vineyard](https://queenisabaer.github.io/isbaner-vineyard/index.html)
+- Inspiration for the README file from AliOKeeffee, suggested by my mentor Antonio - [Mind Yoga](https://github.com/AliOKeeffe/mindyoga/tree/main)
 
 ## Acknowledgments
 
 My mentor Antonio for his support and advice.
 
-The Code Institute slack community for their quick responses and very helpful feedback!
+The Code Institute slack community for their quick responses and very helpful feedback, especially Kay_ci.
