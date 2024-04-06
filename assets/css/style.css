@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-image: url("assets/home/forbidden_library.jpg");
+    background-image: url("/Library-of-Waham/assets/home/forbidden_library.jpg");
     background-size: cover;
     height:240px;
     padding: 20px 40px;
@@ -36,9 +36,9 @@ li {
     margin: 0 10px;
     width: fit-content;
     padding: 5px;
-    border: 2px solid #777777;
+    border: 2px solid #e69138;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #e69138;
 }
 
 @media screen and (max-width: 1440px) {
@@ -57,7 +57,8 @@ li {
 
 a {
     text-decoration: none;
-    color: #eee5e5e7;
+    color: #191919;
+    font-weight: bold;
 }
 
 #quote {
@@ -124,12 +125,12 @@ section {
 
 /*--- ETHERAS ---*/
 #etheras {
-    background-image: url('assets/home/etheras_illust.jpg');
+    background-image: url("/Library-of-Waham/assets/home/etheras_illust.jpg");
 }
 
 /*--- MUTE PRIESTESS ---*/
 #mute-priestess {
-    background-image: url('assets/home/mute_priestess.jpg');
+    background-image: url("/Library-of-Waham/assets/home/mute_priestess.jpg");
 }
 
 .mute-priestess-content {
@@ -138,7 +139,7 @@ section {
 
 /*--- LOST IN TIME ---*/
 #lost-in-time {
-    background-image: url('assets/home/man_lost_in_time.jpg');
+    background-image: url("/Library-of-Waham/assets/home/man_lost_in_time.jpg");
 }
 
 #contact {
