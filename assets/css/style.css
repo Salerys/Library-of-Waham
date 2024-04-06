@@ -39,6 +39,7 @@ li {
     border: 2px solid #e69138;
     border-radius: 10px;
     background-color: #e69138;
+    text-align: center;
 }
 
 @media screen and (max-width: 1440px) {
@@ -46,11 +47,11 @@ li {
         display: block;
     }
     li {
-        width: 70px;
+        width: 80px;
         margin: 5px 0;
     }
     header {
-        padding-right: 0px;
+        padding-right: 5px;
         padding-top: 5px;
     }
 }
@@ -113,7 +114,7 @@ section {
     font-size: 18px;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 460px) {
     .papyrus-text {
         position: absolute;
         top: 30px;
